@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 @Service
-public class WordSelectorService {
+public class WordSelectorService implements IWordSelectorService {
 
   private String[] words;
   private String selectedWord;

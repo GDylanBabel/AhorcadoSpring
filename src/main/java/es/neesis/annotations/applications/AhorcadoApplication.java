@@ -1,21 +1,20 @@
 package es.neesis.annotations.applications;
 
-import es.neesis.annotations.services.SolutionService;
-import es.neesis.annotations.services.UserInterfaceService;
-import es.neesis.annotations.services.WordSelectorService;
+import es.neesis.annotations.models.AhorcadoState;
+import es.neesis.annotations.services.*;
 import org.springframework.stereotype.Component;
 
 @Component
 public class AhorcadoApplication {
   private AhorcadoState state;
-  private WordSelectorService wordSelectorService;
-  private UserInterfaceService userInterfaceService;
-  private SolutionService solutionService;
+  private IWordSelectorService wordSelectorService;
+  private IUserInterfaceService userInterfaceService;
+  private ISolutionService solutionService;
 
   public AhorcadoApplication(
-      WordSelectorService wordSelectorService,
-      UserInterfaceService userInterfaceService,
-      SolutionService solutionService) {
+      IWordSelectorService wordSelectorService,
+      IUserInterfaceService userInterfaceService,
+      ISolutionService solutionService) {
     this.wordSelectorService = wordSelectorService;
     this.userInterfaceService = userInterfaceService;
     this.solutionService = solutionService;

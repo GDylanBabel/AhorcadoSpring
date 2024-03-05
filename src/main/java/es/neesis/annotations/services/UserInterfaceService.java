@@ -1,13 +1,12 @@
 package es.neesis.annotations.services;
 
-import es.neesis.annotations.applications.AhorcadoApplication;
-import es.neesis.annotations.applications.AhorcadoState;
+import es.neesis.annotations.models.AhorcadoState;
 import org.springframework.stereotype.Service;
 
 import java.util.Scanner;
 
 @Service
-public class UserInterfaceService {
+public class UserInterfaceService implements IUserInterfaceService {
 
   public static final String ANSI_RESET = "\u001B[0m";
   public static final String ANSI_GREEN = "\u001B[32m";

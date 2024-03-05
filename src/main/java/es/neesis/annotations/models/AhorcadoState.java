@@ -1,4 +1,4 @@
-package es.neesis.annotations.applications;
+package es.neesis.annotations.models;
 
 public class AhorcadoState {
   private char[] solucion;

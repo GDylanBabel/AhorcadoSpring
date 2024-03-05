@@ -1,11 +1,10 @@
 package es.neesis.annotations.services;
 
-import es.neesis.annotations.applications.AhorcadoApplication;
-import es.neesis.annotations.applications.AhorcadoState;
+import es.neesis.annotations.models.AhorcadoState;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SolutionService {
+public class SolutionService implements ISolutionService {
 
   public boolean checkSolution(AhorcadoState state, String guess) {
     String solutionWord = new String(state.getSolucion());
